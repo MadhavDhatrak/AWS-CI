@@ -15,6 +15,11 @@ jobs:
        uses: actions/checkout@v3
            
      - name: print the name 
-       run : echo "hello Madhav" 
+       run : echo "${{secrets.USER}}" 
+       
+     - name: print the token 
+       run: echo "${{secrets.GITHUB_TOKEN}}"
+
+       
     
     
